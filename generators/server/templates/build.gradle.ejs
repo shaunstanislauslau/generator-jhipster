@@ -24,8 +24,8 @@ buildscript {
         mavenCentral()
         gradlePluginPortal()
         maven { url "https://repo.spring.io/plugins-release" }
-        <!-- Add Spring milestone/snapshot repositories -->
-        <!-- To be removed with final spring-boot version -->
+        // Add Spring milestone/snapshot repositories
+        // To be removed with final spring-boot version
         maven { url 'https://repo.spring.io/snapshot' }
         maven { url 'https://repo.spring.io/milestone' }
     }
@@ -487,6 +487,7 @@ dependencies {
     <%_ } _%>
     testImplementation ("org.springframework.boot:spring-boot-starter-test") {
         exclude module: "junit"
+        exclude group: "org.junit.vintage", module: "junit-vintage-engine"
         exclude group: "com.vaadin.external.google", module: "android-json"
     }
     testImplementation "org.springframework.security:spring-security-test"
