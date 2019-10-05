@@ -28,10 +28,40 @@
     <name><%= humanizedBaseName %></name>
 
     <repositories>
+        <!-- Add Spring milestone/snapshot repositories -->
+        <!-- To be removed with final spring-boot version -->
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
         <!-- jhipster-needle-maven-repository -->
     </repositories>
 
     <pluginRepositories>
+        <!-- Add Spring milestone/snapshot repositories -->
+        <!-- To be removed with final spring-boot version -->
+        <pluginRepository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </pluginRepository>
         <!-- jhipster-needle-maven-plugin-repository -->
     </pluginRepositories>
 
