@@ -24,6 +24,10 @@ buildscript {
         mavenCentral()
         gradlePluginPortal()
         maven { url "https://repo.spring.io/plugins-release" }
+        <!-- Add Spring milestone/snapshot repositories -->
+        <!-- To be removed with final spring-boot version -->
+        maven { url 'https://repo.spring.io/snapshot' }
+        maven { url 'https://repo.spring.io/milestone' }
     }
     dependencies {
         //jhipster-needle-gradle-buildscript-dependency - JHipster will add additional gradle build script plugins here
